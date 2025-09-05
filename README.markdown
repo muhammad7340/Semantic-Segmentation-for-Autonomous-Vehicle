@@ -204,7 +204,7 @@ prediction = np.argmax(y_out, axis=3)[0]
 
 ## 📌 Results
 
-- **Training Accuracy**: 🔼 **90%** after 85 epochs.
+- **Training Accuracy**: 🔼 **85%**
 - **Training Loss**: 🔽 Steadily decreasing.
 - **Segmentation Quality**: Precise pixel-wise classification, as seen in the visualization above.
 
