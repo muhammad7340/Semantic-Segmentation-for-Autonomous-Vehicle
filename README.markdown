@@ -69,7 +69,7 @@ Imagine an autonomous car driving through a city. It captures an image with cars
 - **Link**: https://www.kaggle.com/carlolepelaars/camvid 
 - **Classes**: 32 (e.g., cars, pedestrians, roads, trees).
 - **Images**: 701 labeled frames.
-- **Resolution**: 720×960 pixels.
+- **Resolution**: 480×480 pixels.
 
 
 📸 **Example**:  
@@ -86,7 +86,7 @@ To make the model robust, we augmented the CamVid dataset with custom data:
    Recorded a video in various lighting and traffic conditions.
    
 2. **Frame Extraction** 📸  
-   Extracted frames at 1 FPS, resized to 720×960 pixels.
+   Extracted frames at 1 FPS, resized to 480×480 pixels.
 
 3. **Annotation** 🏷️  
    Used **MATLAB Image Labeler** to manually label frames.
@@ -138,8 +138,8 @@ U-Net is a **CNN** with an encoder-decoder structure, ideal for segmentation:
 ### 🔧 Configuration
 ```python
 # config.py
-image_width = 768
-image_height = 512
+image_width = 480
+image_height = 480
 batch_size = 4
 init_lr = 1e-3
 backbone = 'efficientnetb2'
@@ -254,7 +254,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## 🙌 Contributing
 
-Have ideas to make this project better? Fork the repo, make changes, and submit a pull request! Let’s build smarter systems together. 😄
+Do you have ideas to improve this project? Fork the repo, make changes, and submit a pull request! Let’s build smarter systems together. 😄
 
 ⭐ **Star the repo** on GitHub if you find it helpful!
 
